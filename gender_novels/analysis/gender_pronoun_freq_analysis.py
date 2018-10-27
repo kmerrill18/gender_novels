@@ -73,8 +73,6 @@ def subject_vs_object_pronoun_freqs(corp):
     Each dictionary maps each Novel in the corpus to the proportion of the pronouns
         of the specified gender in that novel that are subject pronouns
 
-    #TODO: add doctests
-
     :param corp: Corpus
     :return: tuple of two dictionaries (male, female)
 
@@ -186,6 +184,7 @@ def subject_pronouns_gender_comparison(corp, subject_gender):
     else:
         raise ValueError('subject_gender must be \'male\' or \'female\'')
 
+
 def dict_to_list(d):
     '''
     Takes in a dictionary and returns a list of the values in the dictionary
@@ -205,6 +204,7 @@ def dict_to_list(d):
     for key, value in d.items():
         L.append(value)
     return L
+
 
 def freq_by_author_gender(d):
     '''
